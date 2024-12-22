@@ -4,11 +4,9 @@ class Solution:
     def printGfg(self, n):
         # Code here
         if n==0:
-            return 0
-        else:
-            print ("GFG",end=" ")
-            return self.printGfg(n-1)
-        
+            return
+        print("GFG",end=' ')
+        self.printGfg(n-1)
 
 
 #{ 
@@ -22,4 +20,5 @@ if __name__ == '__main__':
         ob = Solution()
         ob.printGfg(N)
         print()
+        print("~")
 # } Driver Code Ends
