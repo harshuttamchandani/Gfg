@@ -1,4 +1,5 @@
 #User function Template for python3
+sys.setrecursionlimit(100000)
 class Solution:
 	def reverseSubArray(self,arr,l,r):
 		# code here
@@ -7,7 +8,8 @@ class Solution:
 		temp=arr[l-1]
 		arr[l-1]=arr[r-1]
 		arr[r-1]=temp
-		return self.reverseSubArray(arr,l+1,r-1)
+		self.reverseSubArray(arr,l+1,r-1)
+		return arr
 
 
 #{ 
